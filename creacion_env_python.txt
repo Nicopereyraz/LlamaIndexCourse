@@ -1,0 +1,74 @@
+python -m venv my_venv_name
+source my_venv_name/bin/activate
+
+<venv>\Scripts\activate.bat
+
+deactivate
+
+pip install -r requirements.txt
+pip freeze > requirements.txt
+
+Controlar diferentes versiones de python
+----------------------------------------
+py --list
+py -3.9
+py -m pip install virtualenv
+py -3.11 -m virtualenv venv
+
+C:\Users\<User>\AppData\Local\Programs\Python\Launcher:
+aca se crean py.ini y pyw.ini con lo siguiente:
+[defaults]
+python=3.11
+
+pip list | findstr <package>
+
+
+
+Git commands
+-------------
+
+git ls-remote --get-url origin para chequear el remote asignado
+git remote -v tambien sirve para ver los remote
+git remote set-url <remotename> <remoteurl> para setear un remoto o pisar un remoto por otro
+
+git config --global user.email "you@example.com"
+git config user.name "Your Name"
+git config user.password "your password"
+
+
+git config --global http.sslbackend schannel cambiar el pedido de certificado por conexion a github en la web
+
+
+git add -u para agregar todos los tracked files
+git reset <file> para sacar el archivo del add
+
+git restore . para volver atras todos los cambios no commiteados
+
+git switch para cambiar de rama. 
+
+git push -u origin <nombre_rama>
+
+git checkout -b feat/nombre : esto es para crear una nueva rama
+
+git checkout -b feat/topic origin/feat/topic: El segundo sirve para crear una rama en base a esta segunda rama
+
+git stash save  <archivo1.py> <archivo2.txt>
+git stash list 
+git stash pop <numero de stash>
+
+gitk --all &: el & hace que el cmd continue
+
+git rebase <branch>: es para traer cambios de la rama, de la cual parte mi rama, que no se actualizaron.
+
+
+git branch -d <rama>: para borrar la rama local
+git push -d origin <rama>: para borrar la rama en el origin
+
+git diff <file> :muestra las diferencias generadas en el archivo
+
+git remote: para ver los distintos remotos
+git remote show origin: te muestra toda la info de los locales y remotos
+
+CMD commands
+------------
+start ... : es para abrir otro cmd y ejecutar lo que quiera
