@@ -36,7 +36,7 @@ git config user.name "Your Name"
 git config user.password "your password"
 
 
-git config --global http.sslbackend schannel cambiar el pedido de certificado por conexion a github en la web
+git config --global http.sslbackend schannel: cambiar el pedido de certificado por conexion a github en la web
 
 
 git add -u para agregar todos los tracked files
